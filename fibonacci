@@ -1,0 +1,15 @@
+secuencia = [0,1]
+
+i = 0
+j = 1
+cont = 0
+
+print (i)
+print (j)
+
+while cont <= 100:
+    secuencia.append (secuencia[i] + secuencia[j])
+    i += 1
+    j += 1
+    cont += 1
+    print (secuencia[j])
