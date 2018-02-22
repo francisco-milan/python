@@ -1,0 +1,62 @@
+def menu():
+    print("1. Dolar")
+    print("2. Dolar canadiense")
+    print("3. Euro")
+    print("4. Libra ")
+    print("5. Centenario")
+
+    dinero=int(input("cuanto dinero tenes?"))
+
+    cambio=int(input("que tipo de cambio desea realizar: "))
+    if cambio ==1:
+        dinero_dolar = dolar(dinero)
+        print ("tenes", dinero_dolar, "en dolares")
+    elif cambio ==2:
+        dinero_can = can(dinero)
+        print ("tenes", dinero_can, "en canadiense")
+    elif cambio ==3:
+        dinero_euro = euro(dinero)
+        print ("tenes", dinero_euro, "en euro")
+    elif cambio==4:
+        dinero_libra = libra(dinero)
+        print ("tenes", dinero_libra, "en libras")
+    elif cambio==5:
+        dinero_cente = cente(dinero)
+        print ("tenes", dinero_cente, "en centenario")
+    else:
+        print ("Debes ingresar el numero correspondiente al tipo de cambio que desea: ")
+        #global reiniciar
+        reiniciar=input("Desea hacer otro cambio de peso? (si/no)")
+        otravez(reiniciar)
+
+def dolar(dinero_in):
+    dolar=int(input("ingrese el precio del dolar hoy: "))
+    dinero_out=dinero_in/dolar
+    return dinero_out
+
+def can(dinero_in):
+    can=int(input("ingrese el precio del candiense hoy: "))
+    dinero_out=dinero_in/can
+    return dinero_out
+
+def euro(dinero_in):
+    eur=int(input("ingrese el precio del eu hoy: "))
+    dinero_out=dinero_in/eur
+    return dinero_out
+
+def libra(dinero_in):
+    lib=int(input("ingrese el precio de la libra hoy: "))
+    dinero_out=dinero_in/lib
+    return dinero_out
+
+def cente(dinero_in):
+    ce=int(input("ingrese el precio del centenario hoy:"))
+    dinero_out=dinero_in/ce
+    return dinero_out
+
+def otravez(reiniciar_in):
+    while reiniciar_in == "si":
+        menu()
+        reiniciar_in = "no"
+
+menu()
