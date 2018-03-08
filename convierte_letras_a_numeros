@@ -7,7 +7,7 @@ nombre1 = list(input("Nombre: ").lower())
 sum = 0
 
 for letra in nombre1:
-    print ("La letra " + letra + " equivale a " + str(letras_a_numeros[letra]))
+    print ("La letra", letra, "equivale a", letras_a_numeros[letra])
     sum = sum + letras_a_numeros[letra]
 
 print ("La suma de todos los valores es:", str(sum))
