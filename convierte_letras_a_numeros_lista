@@ -1,0 +1,14 @@
+alfabeto = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+			'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q',
+			'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+nombre = input("Nombre: ").lower()
+
+sum = 0
+
+for letra in nombre:
+	valor = alfabeto.index(letra) + 1
+	print("La letra", letra, "equivale a", str(valor))
+	sum += valor
+
+print("La suma de los valores es:", str(sum))
