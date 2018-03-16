@@ -1,7 +1,0 @@
-# Example based on a Just BASIC Help Files
-# define a function for returning a square root
-def squareRoot(value):
-    squareRoot = value ** 0.5
-    return(squareRoot)
-
-print("The square root of 5 is", squareRoot(5))
