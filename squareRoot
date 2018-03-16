@@ -1,6 +1,6 @@
 # define a function for returning a square root
 def squareRoot(value):
     squareRoot = value ** 0.5
-    print(squareRoot)
+    return(squareRoot)
 
-squareRoot(64)
+print ("The square root of 5 is ", squareRoot(5))
