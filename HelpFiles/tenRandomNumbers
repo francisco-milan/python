@@ -1,0 +1,7 @@
+# This code is based on an example from Just BASIC Help Files
+# print ten random numbers between one and ten
+
+import random
+
+for a in range(10):
+    print(random.randint(1,10))
