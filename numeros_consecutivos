@@ -1,0 +1,31 @@
+# Escribe un programa que permita al usuario ingresar un número
+# x y la cantidad(n) de números consecutivos a x para ser mostrados:
+# Input Format
+# La primera linea representa al número entero x. La segunda linea representa
+# al número entero n.
+# Constraints
+#             0 < x < 10**3
+#             0 < n < 10**2
+# Output Format
+# Si las entradas con correctas, se mostrarán n lineas cada una con un valor
+# cosecutivo. Si las entradas no son correctas, se mostrará el mensajeÑ
+# "Invalid input"
+# Sample Input 0
+#   4
+#   3
+# Sample Output
+#   5
+#   6
+#   7
+
+x = int(input("Ingrese el numero con el que va a iniciar: ", ))
+n = int(input("Cuantos números consecutivos serán mostrados? ", ))
+
+contador = 0
+if 0<x and x<10**3 and 0<n and n<10**2:
+    while contador < n:
+        x = x+1
+        print(x)
+        contador = contador+1
+else:
+    print("Invalid input")
