@@ -1,0 +1,13 @@
+# Escribe una función exponente, que dado un número n, retorne el exponente de dicha potencia de 2 más grande.
+# Por ejemplo, si el número es 65, tu programa debe retornar 6, ya que 2⁶ = 64.
+
+def exponente(n):
+    potencia = 0
+
+    while True:
+        if (2 ** potencia) > n:
+            potencia = potencia - 1
+            break
+        else:
+            potencia = potencia + 1
+    return(potencia)
