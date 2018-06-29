@@ -1,0 +1,10 @@
+try:
+   from socket import *
+   sock = socket()
+   sock.connect(("www.google.es",80))
+   request = b"GET / HTTP/1.1\nHost: www.google.es\r\n\r\n"
+   sock.send(request)
+   data = sock.recv(1024)
+   print(data)
+except:
+   print("Error")
